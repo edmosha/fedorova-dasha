@@ -3,54 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<title>barbershop.ru</title>
-	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="page-header">
-		<div class="menu"> 
-			<nav>
+	<header class="page-header">
+		<div class="menu">
+		<div class="container">
+			<nav class="header-nav">
 				<a href="#">Информация</a>
 				<a href="#">Новости</a>
 				<a href="#">Прайс-лист</a>
 				<a href="#">Магазин</a>
 				<a href="#">Контакты</a>
-				<a href="#">Вход</a>
-			</nav>
+				<a class="login" href="#">Вход</a>
+			</nav>	
 		</div>
-		<div class="logo">
-			<img src="img/index-logo.svg" alt="Логотип" height="132">
-		</div>	
+	</header>	
+	<div class="container">
+	<main>
+	<div class="logo-header">
+		<img class="logo" src="img/index-logo.svg" alt="Логотип" height="132">
 	</div>
-	<div class="features">
-			<ul>
-			<li class="feature-item">
+	<div class="features clearfix">
+			<div class="feature-item">
 				<h2>Быстро</h2>
 				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
-			</li>
-			<li class="feature-item">
+			</div>
+			<div class="feature-item">
 				<h2>Круто</h2>
 				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случаее внешне.</p>
-			</li>
-			<li class="feature-item">
+			</div>
+			<div class="feature-item">
 				<h2>Дорого</h2>
 				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-			</li>
-		</ul>
-	</div>
-	<div class="news-and-photo">
+			</div>
+	<div class="news-and-photo clearfix">
 		<div class="news">
 			<h2>Новости</h2>
-			<p>Нам наконец завезли ягермайстер! Теперь вы можите пропустить стаканчик во время стрижки<br>
-			11 января</p>
-			<p>В нашей команде пополнение, борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды<br>
-			18 января</p>
-			<a href="#">Все новости</a>
+			<a href="#">
+				<p>Нам наконец завезли ягермайстер! Теперь вы можите пропустить стаканчик во время стрижки
+				<span class="news-date">11 января</span></p></a>
+			<a href="#">
+				<p>В нашей команде пополнение, борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+				<span class="news-date">18 января</span></p>
+				</a>
+			<a class="btn" href="#">Все новости</a>
 		</div>
 		<div class="photo">
 			<h2>Фотогалерея</h2>
 			<img src="img/photo1.jpg" alt="фото студии"><br>
-			<a href="#">Вперед</a>
-			<a href="#">Назад</a>
+			<button class="btn">Назад</button>
+			<button class="btn">Вперед</button>
 		</div>
 	</div>
 	<div class="contacs-and-visit">
@@ -62,31 +66,35 @@
 			<p>Время работы:<br>
 			пн-пт: с 10:00 до 22:00<br>
 			сб-вс: с 10:00 до 19:00</p>
-			<a href="#">Как проехать</a>
-			<a href="#">Обратная связь</a>
+			<a class="btn" href="#">Как проехать</a>
+			<a class="btn" href="#">Обратная связь</a>
 		</div>
-		<div class="visit">
+	</div>	
+		<div class="form">
 			<h2>Записаться</h2>
 			<p>Укажите желаюмую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<label>
-			Дата<br>
-			<input type="text" name="date">
-			</label>
-			<label>
-			Ваше имя<br>
-			<input type="text" name="name">
-			</label>
-			<label>
-			Время<br>
-			<input type="text" name="time">
-			</label>
-			<label>
-			Телефон<br>
-			<input type="text" name="number">
-			</label>
+			<form>
+			<div>
+				<label for="txt1">Дата</label>
+				<input id="txt1" type="text" name="date">
+			<div>
+			</div>
+				<label for="txt2">Ваше имя</label>
+				<input id="txt2" type="text" name="name">
+			<div>
+			</div>
+				<label for="txt3">Время</label>
+				<input id="txt3" type="text" name="time">
+			<div>
+			</div>
+				<label for="txt4">Телефон</label>
+				<input id="txt4" type="text" name="number">
+			</div>
+				<button class="btn" type="submit">Отправить</button>
+			</form>
 		</div>
-	</div>
-	<div class="footer">
+	</main>
+	<footer class="footer">
 		<div class="footer-info">
 			<p>Барбершоп «Бородинский»<br>
 			Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
@@ -103,6 +111,7 @@
 			<h3>Разработан</h3>
 			<p>html academy</p>
 		</div>
+	</footer>
 	</div>
 </body>
 </html>

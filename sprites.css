@@ -1,0 +1,34 @@
+.facebook, .instagram, .login, .Shape-1, .vk{
+	background: url(sprites.png) no-repeat;
+}
+
+.facebook{
+	background-position: -112px -16px ;
+	width: 11px;
+	height: 22px;
+}
+
+.instagram{
+	background-position: -60px -56px ;
+	width: 20px;
+	height: 20px;
+}
+
+.login{
+	background-position: -9px -63px ;
+	width: 14px;
+	height: 14px;
+}
+
+.Shape-1{
+	background-position: -11px -7px ;
+	width: 30px;
+	height: 29px;
+}
+
+.vk{
+	background-position: -59px -13px ;
+	width: 27px;
+	height: 15px;
+}
+
