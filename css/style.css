@@ -1,3 +1,240 @@
+/***** normalize-ccs *****/
+
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/***** normalize-ccs *****/
+
 /* общее */
 body {
 	min-width: 100%;
@@ -6,7 +243,7 @@ body {
 	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
 	font-size: 16px;
 	line-height: calc(20/16);
-	background: black url(../img/bg.jpg) 50% 40px;
+	background: #000000 url(../img/bg.jpg) no-repeat 50% 40px;
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -23,12 +260,6 @@ body {
 	width: 940px;
 }
 
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 a {
 	text-decoration: none;
 	font-size: 14px;
@@ -39,12 +270,18 @@ a {
 }
 
 button {
+	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
 	border: none;
 	font-size: 14px;
 	line-height: calc(24/16);
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: calc(42/30)
 }
 
 /* шапка */	
@@ -70,19 +307,15 @@ nav a {
 }
 
 .login {
-	margin-left: 330px;
+	margin-left: 260px;
 	margin-right: 0;
-	background: url(../img/sprites.png) no-repeat 14px 14px;
-	background-position: 15px -63px ;
-	
-}
-
-nav a .login {
-	margin-right: 
+	background: url(../img/sprites.png) no-repeat -300px -55px;
+	padding-left: 40px;
 }
 
 .logo-header {
 	text-align: center;
+	padding-left: 15px;
 	margin-top: 60px;
 }
 
@@ -93,52 +326,73 @@ nav a .login {
 
 /* майн */
 
-h2 {
-	font-size: 30px;
-	line-height: calc(42/30)
-}
 
+/* -особенности- */
 .features {
-	margin-top: 75px;
+	display: flex;
+	align-items: baseline;
+	height: 100%;
+	justify-content: center;
+	margin-top: 70px;
 	margin-bottom: 81px;
 }
 
-.feature-item {
+.feature-item { 
+	box-sizing: content-box;
+	background: url(../img/sprites.png) no-repeat -935px -400px;
+}
+
+.feature-item-1 {
+	width: 251px;
 	text-align: center;
-	width: 33.333333%;
-	/*float: left;*/ /* НИКАК НЕ РАБОТАЕТ распорка, я совсем не понимаю, че делать */
 	padding-right: 60px;
+	padding-left: 25px;
 }
 
-.feature-item:last-child {
-	padding-right: 20px;
+.feature-item-2 {
+	width: 270px;
+	text-align: center;
+	padding-right: 43px;
 }
 
-.feature-item:first-child {
-	padding-left: 20px;
+.feature-item-3 {
+	width: 283px;
+	text-align: center;
+	padding-right: 8px;
+}
+
+.feature-item h2 {
+	margin-top: 0;
 }
 
 .feature-item p {
+	margin-bottom: 0;
+	padding-top: 53px;
 	font-size: 14px;
 	line-height: calc(24/14)
 }
 
+/* блок-1 */
+
 .news-and-photo div {
 	background: #ffffff url(../img/bg-block.jpg);
-	color: #000000;
-	padding-top: 53px;
-	min-height: 420px;
+	padding-top: 34px;
+}
+.news-and-photo {
+	display: flex;
+	height: 419px;
 }
 
 .news-and-photo h2 {
 	margin: 0;
 }
 
-.news {
-	float: left;
+.news { 
 	width: 50%;
 	padding-left: 80px;
 	padding-right: 40px;
+	padding-bottom: 50px;
+
 }
 
 .news a {
@@ -147,8 +401,13 @@ h2 {
 
 .news p {
 	font-size: 14px;
-	line-height: calc(24/16);
+	line-height: calc(24/14);
 	color: #000000;
+	margin: 0;
+}
+
+.news h2 {
+	margin-bottom: 14px;
 }
 
 .news-date {
@@ -156,18 +415,15 @@ h2 {
 	text-transform: lowercase;
 	color: #000000;
 	display: inline-block;
-}
-
-.news .btn {
-	width: 140px; /* ширина не работает, если не прописывать инлайн-блок, так должно быть? what? */
- 	padding: 13px; /* И почему кнопка не переносится вниз? ссылка же типо как блок? */
+	margin-bottom: 30px;
 }
 
 .photo {
-	float: right;
 	width: 50%;
 	padding-left: 90px;
 	padding-right: 80px;
+	padding-bottom: 50px;
+	background: url(../img/sprites.png) no-repeat 724px -516px;
 }
 
 .photo img  {
@@ -188,7 +444,170 @@ h2 {
 }
 
 .btn {
+	display: inline-block;
 	background-color: #000000;
 	border: none;
+	text-align: center;
+	width: 140px; 
+ 	padding: 13px; 
 }
 
+.news .div-btn {
+	padding: 0;
+	height: 50px;
+}
+
+/* блок-2 */
+
+.contacs-and-visit {
+	background: #ffffff url(../img/bg-block.jpg);
+	color: #000000;
+	padding-top: 34px;
+	min-height: 420px;
+	margin-top: 36px;
+	display: flex;
+	height: 435px;
+}
+
+.contacs-and-visit p {
+	font-size: 14px;
+	line-height: calc(24/14);
+	color: #000000;
+}
+
+.contacs-and-visit h2 {
+	margin: 0;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+.contacs {
+	width: 50%;
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+.contacs .btn {
+ 	margin-right: 20px;
+}
+
+.visit {
+	width: 50%;
+	padding-left: 90px;
+	padding-right: 80px;
+}
+
+.visit form {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.visit .form {
+	padding-right: 20px;
+}
+
+.visit .form:nth-child(2n) {
+	padding-right: 0;
+}
+
+.visit label, input, .form {
+	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
+	font-size: 14px;
+	line-height: calc(24/14);
+}
+
+.visit label {
+	display: block;
+	padding-bottom: 10px;
+	padding-left: 17px;
+}
+
+.visit label:nth-child(3) {
+	padding-top: 0;
+}
+
+.visit label:nth-child(4) {
+	padding-top: 0;
+}
+
+.visit input {
+	width: 140px;
+	height: 43px;
+	border: 2px solid #000000;
+	font-weight: bold;
+	padding: 14px 15px 12px 15px;
+	margin-bottom: 10px;
+}
+
+.visit .btn {
+	width: 300px; 
+	margin-top: 10px;
+}
+
+/* футер */
+
+footer {
+	background: #232323 url(../img/bg-footer.jpg);
+	height: 193px;
+	margin-top: 65px;
+}
+
+.footer {
+	display: flex;
+
+}
+
+.footer p, h3 {
+	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
+	font-size: 14px;
+	line-height: calc(24/14);
+}
+
+.footer h3 {
+	text-align: center;
+}
+
+.footer-info {
+	padding-top: 25px;
+}
+
+.footer-info .location {
+	text-decoration: underline;
+}
+
+.footer-socium {
+	display: flex;
+	flex-wrap: wrap;
+	width: 146px;
+	margin-right: 254px;
+	margin-left: 93px;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.footer-socium .socium-btn {
+	width: 43px;
+	height: 43px;
+	margin-right: 5px;
+}
+
+.footer-socium a {
+	padding: 21px;
+}
+
+.footer-socium .btn-vk {
+	background: #000000 url(../img/sprites.png) -156px -55px;
+}
+
+.footer-socium .btn-faceboock {
+	background: #000000 url(../img/sprites.png)  -206px -254px;
+}
+
+.footer-socium .btn-inst {
+	background: #000000 url(../img/sprites.png) -52px -305px;
+}
+
+.footer-developer {
+	padding-top: 25px;
+}

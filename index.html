@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" lang="ru">
 	<title>barbershop.ru</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -19,26 +19,28 @@
 				<a class="login" href="#">Вход</a>
 			</nav>	
 		</div>
+		</div>
 	</header>	
 	<div class="container">
 	<main>
 	<div class="logo-header">
 		<img class="logo" src="img/index-logo.svg" alt="Логотип" height="132">
 	</div>
-	<div class="features clearfix">
-			<div class="feature-item">
+	<div class="features">
+			<div class="feature-item feature-item-1">
 				<h2>Быстро</h2>
 				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
 			</div>
-			<div class="feature-item">
+			<div class="feature-item feature-item-2">
 				<h2>Круто</h2>
 				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случаее внешне.</p>
 			</div>
-			<div class="feature-item">
+			<div class="feature-item feature-item-3">
 				<h2>Дорого</h2>
 				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
 			</div>
-	<div class="news-and-photo clearfix">
+	</div>		
+	<div class="news-and-photo">
 		<div class="news">
 			<h2>Новости</h2>
 			<a href="#">
@@ -49,7 +51,9 @@
 				<p>В нашей команде пополнение, борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
 				<span class="news-date">18 января</span>
 			</a>
+			<div class="div-btn">
 			<a class="btn" href="#">Все новости</a>
+			</div>
 		</div>
 		<div class="photo">
 			<h2>Фотогалерея</h2>
@@ -69,50 +73,60 @@
 			сб-вс: с 10:00 до 19:00</p>
 			<a class="btn" href="#">Как проехать</a>
 			<a class="btn" href="#">Обратная связь</a>
-		</div>
-	</div>	
-	<div class="form">
+		</div>	
+		<div class="visit">
 			<h2>Записаться</h2>
 			<p>Укажите желаюмую дату и время и мы свяжемся с вами для подтверждения брони</p>
 			<form>
-			<div>
+			<div class="form">
 				<label for="txt1">Дата</label>
-				<input id="txt1" type="text" name="date">
-			<div>
+				<input id="txt1" type="text" name="date" placeholder="08.10.2017">
 			</div>
-				<label for="txt2">Ваше имя</label>
-				<input id="txt2" type="text" name="name">
-			<div>
+			<div class="form">
+				<label for="txt2">Время</label>
+				<input id="txt2" type="text" name="time" placeholder="10:00">
 			</div>
-				<label for="txt3">Время</label>
-				<input id="txt3" type="text" name="time">
-			<div>
+			<div class="form">
+				<label for="txt3">Ваше имя</label>
+				<input id="txt3" type="text" name="name" placeholder="Борода">
 			</div>
+			<div class="form">
 				<label for="txt4">Телефон</label>
-				<input id="txt4" type="text" name="number">
+				<input id="txt4" type="text" name="number" placeholder="+7 123 456-78-90">
 			</div>
 				<button class="btn" type="submit">Отправить</button>
 			</form>
+		</div>	
+	</div>
 	</div>
 	</main>
-	<footer class="footer">
+	<footer>
+	<div class="container">
+		<div class="footer">
 		<div class="footer-info">
 			<p>Барбершоп «Бородинский»<br>
-			Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
-			<a href="#">Как нас найти</a><br>
+			Адрес: г. Санкт-Петербург, ул. б. Конюшенная, д. 19/8<br>
+			<a class="location" href="#">Как нас найти?</a><br>
 			Телефон: +7 (495) 666-02-66</p>
 		</div>	
 		<div class="footer-socium">
 			<h3>Давайте дружить!</h3>
-			<a>Вк</a>
-			<a>Фейсбук</a>
-			<a>Инста</a>
+			<div class="socium-btn btn-vk">	
+				<a href="#"></a>
+			</div>
+			<div class="socium-btn btn-faceboock">	
+				<a href="#"></a>
+			</div>
+			<div class="socium-btn btn-inst">
+				<a href="#"></a>
+			</div>
 		</div>
-		<div class="developer">
-			<h3>Разработан</h3>
-			<p>html academy</p>
+		<div class="footer-developer">
+			<h3>Разработанно:</h3>
+			<p class="btn">html academy</p>
 		</div>
+		</div>
+	</div>	
 	</footer>
-	</div>
 </body>
 </html>
