@@ -236,7 +236,7 @@ template {
 /***** normalize-ccs *****/
 
 /* общее */
-body {
+body.index {
 	min-width: 100%;
 	margin: 0;
 	padding: 0;
@@ -281,7 +281,14 @@ button {
 
 h2 {
 	font-size: 30px;
-	line-height: calc(42/30)
+	line-height: calc(42/30);
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: calc(30/24);
+	color: #000000;
 }
 
 /* шапка */	
@@ -291,8 +298,9 @@ header {
 	height: 72px;
 }
 
-nav {
-	margin-left: 10px; 
+.header-nav {
+	margin-left: 10px;
+	display: flex;
 }
 
 nav a {
@@ -307,7 +315,7 @@ nav a {
 }
 
 .login {
-	margin-left: 260px;
+	margin-left: 290px;
 	margin-right: 0;
 	background: url(../img/sprites.png) no-repeat -300px -55px;
 	padding-left: 40px;
@@ -385,6 +393,7 @@ nav a {
 
 .news-and-photo h2 {
 	margin: 0;
+	color: #000000;
 }
 
 .news { 
@@ -558,14 +567,10 @@ footer {
 
 }
 
-.footer p, h3 {
+.footer p {
 	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
 	font-size: 14px;
 	line-height: calc(24/14);
-}
-
-.footer h3 {
-	text-align: center;
 }
 
 .footer-info {
@@ -579,10 +584,10 @@ footer {
 .footer-socium {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	width: 146px;
 	margin-right: 254px;
 	margin-left: 93px;
-	text-align: center;
 	padding-top: 25px;
 }
 
@@ -610,4 +615,153 @@ footer {
 
 .footer-developer {
 	padding-top: 25px;
+	text-align: center;
+}
+
+/*=========================================*/
+				/* Shop */
+/*=========================================*/
+
+body.shop {
+	min-width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
+	font-size: 16px;
+	line-height: calc(20/16);
+	background: #ffffff url(../img/bg-shop.jpg);
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav.shop-header-nav {
+
+}
+
+.header-nav .login-2 {
+	padding-left: 30px;
+	margin-left: 141px;
+}
+
+.breadcrumbs h2 {
+	font-size: 30px;
+	line-height: calc(42/30);
+	margin: 0;
+	margin-top: 50px;
+}
+
+nav.shop-nav a {
+	font-size: 14px;
+	line-height: calc(20/14);
+	color: #000000;
+	margin-top: 10px;
+	margin-bottom: 35px;
+
+}
+
+nav.shop-nav a:first-child {
+	padding-left: 0px;
+}
+
+.shop-page {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.shop-page .manufacturer h3 {
+	margin-top: 0;
+}
+
+.shop-page label{
+	font-size: 14px;
+	line-height: calc(18/14);
+	color: #000000;
+	padding-left: 23px;
+	display: inline-block;
+	max-width: 165px;
+}
+
+.shop-filters .btn {
+	margin-top: 29px;
+	width: 112px;
+}
+
+.shop-page .filter-item {
+	padding-bottom: 22px;
+}
+
+.shop-catalog {
+	width: 700px;
+	height: 612px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+}
+
+.shop-page .catalog-item {
+	width: 220px;
+	height: 286px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #ffffff;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.shop-page .catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.catalog-item img {
+	width: 220px;
+	height: 165px;
+}
+
+.catalog-item .price {
+	font-size: 14px;
+	line-height: calc(18/14);
+	display: inline-block;
+	width: 109px;
+	height: 43px;
+	padding: 14px;
+	text-align: center;
+	background: #e5e5e5;
+}
+
+.catalog-item .btn {
+	width: 78px;
+	height: 43px;
+	padding: 12px;
+}
+
+.catalog-item .item-name {
+	font-size: 14px;
+	line-height: calc(18/14);
+	text-transform: none;
+	margin: 0;
+	padding-right: 40px;
+}
+
+.paginator {
+		margin-top: 25px;
+		margin-bottom: 50px;
+}
+
+.paginator .btn {
+	width: 43px;
+	height: 43px;
+	margin-right: 7px;
+
+}
+
+.paginator .btn:nth-child(2) {
+	background: #ffffff;
+	color: #000000;
+}
+
+.footer {
+	color: #ffffff;
 }
