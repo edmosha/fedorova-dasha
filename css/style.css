@@ -319,7 +319,7 @@ nav a {
 	display: inline-block;
 }
 
-.login {
+.login-btn {
 	margin-left: 290px;
 	margin-right: 0;
 	background: url(../img/sprites.png) no-repeat -300px -55px;
@@ -473,7 +473,7 @@ nav a {
 
 /* блок-2 */
 
-.contacs-and-visit {
+.contacs-and-entry {
 	background: #ffffff url(../img/bg-block.jpg);
 	color: #000000;
 	padding-top: 34px;
@@ -483,13 +483,13 @@ nav a {
 	height: 435px;
 }
 
-.contacs-and-visit p {
+.contacs-and-entry p {
 	font-size: 14px;
 	line-height: calc(24/14);
 	color: #000000;
 }
 
-.contacs-and-visit h2 {
+.contacs-and-entry h2 {
 	margin: 0;
 	margin-bottom: 15px;
 	margin-top: 5px;
@@ -505,47 +505,47 @@ nav a {
  	margin-right: 20px;
 }
 
-.visit {
+.entry {
 	width: 50%;
 	padding-left: 90px;
 	padding-right: 80px;
 }
 
-.visit form {
+.entry form {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
 }
 
-.visit .form {
+.entry .form-group {
 	padding-right: 20px;
 }
 
-.visit .form:nth-child(2n) {
+.entry .form-group:nth-child(2n) {
 	padding-right: 0;
 }
 
-.visit label, input, .form {
+.entry label, input, .form-group {
 	font-family: 'PT Sans Narrow', Arial, Tahoma, San-francis, sans-serif;
 	font-size: 14px;
 	line-height: calc(24/14);
 }
 
-.visit label {
+.entry label {
 	display: block;
 	padding-bottom: 10px;
 	padding-left: 17px;
 }
 
-.visit label:nth-child(3) {
+.entry label:nth-child(3) {
 	padding-top: 0;
 }
 
-.visit label:nth-child(4) {
+.entry label:nth-child(4) {
 	padding-top: 0;
 }
 
-.visit input {
+.entry input {
 	width: 140px;
 	height: 43px;
 	border: 2px solid #000000;
@@ -554,7 +554,7 @@ nav a {
 	margin-bottom: 10px;
 }
 
-.visit .btn {
+.entry .btn {
 	width: 300px; 
 	margin-top: 10px;
 }
@@ -622,6 +622,33 @@ footer {
 	padding-top: 25px;
 	text-align: center;
 }
+
+.opened {
+	opacity: 1;
+	visibility: visible;
+}
+
+div.modal-login {
+	width: 460px;
+	height: 385px;
+	background: #ffffff;
+	opacity: 1;
+	visibility: visible;
+	position: absolute;
+	top: 50%;
+	right: 30%;
+	padding: 50px 80px
+}
+
+.modal-login h2,p,label,input {
+	color: #000000;
+}
+
+.modal-login p,label,input {
+	font-size: 14px;
+}
+
+
 
 /*=========================================*/
 				/* SHOP */
@@ -754,11 +781,6 @@ nav.shop-nav a:last-child {
 	text-transform: none;
 	margin: 0;
 	padding-right: 40px;
-}
-
-.paginator {
-		margin-top: 25px;
-		margin-bottom: 50px;
 }
 
 .paginator .btn {
